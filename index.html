@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salón de Belleza DIVINA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 {
+            color: #fff;
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .hero {
+            background-color: #000;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-content h2 {
+            font-size: 3rem;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .btn-primary {
+            background-color: #f4a6a2;
+            padding: 15px 30px;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+            transition: background-color 0.4s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #f28b7e;
+        }
+
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background-color: rgba(255, 255, 255, 0.3);
+            transform: translate(-50%, -50%) rotate(45deg);
+            transition: all 0.75s ease;
+            opacity: 0;
+        }
+
+        .btn-primary:hover::before {
+            width: 400%;
+            height: 400%;
+            opacity: 1;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        /* Una sola imagen de fondo que cubre desde "Tienda" hasta "Contacto" */
+        #main-background {
+            background-image: url('https://prosandoval.com/wp-content/uploads/2018/10/Diseno-web-belli-spa-moda-y-belleza.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 60px 20px; /* Espaciado para las secciones */
+        }
+
+        #contacto {
+            background-color: #000;
+            color: white;
+        }
+
+        .contact-info {
+            margin: 20px auto;
+            max-width: 600px;
+            text-align: left;
+            font-size: 18px;
+        }
+
+        .circle-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px; /* Espaciado reducido */
+            margin-top: 30px;
+        }
+
+        .circle {
+            width: 40px; /* Tamaño reducido */
+            height: 40px; /* Tamaño reducido */
+            border-radius: 50%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .circle img {
+            width: 100%; /* Adaptado al nuevo tamaño */
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .circle:hover {
+            transform: scale(1.05);
+        }
+
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .image-gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>DIVINA</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#tienda">Tienda</a></li>
+                    <li><a href="#extensiones">Extensiones</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#accesorios">Accesorios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>HERMOSO. SEDUCTOR. PERSONAL.</h2>
+            <a href="#" class="btn-primary" id="buyButton">COMPRAR EXTENSIONES</a>
+        </div>
+    </section>
+
+    <!-- Sección con una sola imagen de fondo -->
+    <section id="main-background">
+        <section id="tienda">
+            <h2>Tienda</h2>
+            <div class="image-gallery">
+                <img src="https://i.pinimg.com/550x/01/e2/7b/01e27b4330be7e631df594b21d8ac431.jpg" alt="Imagen Tienda">
+            </div>
+        </section>
+
+        <section id="extensiones">
+            <h2>Extensiones</h2>
+            <div class="image-gallery">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/71FPd4hSR4L._AC_UL600_SR600,600_.jpg" alt="Extensiones Cejas">
+                <img src="https://pelucasypostizosvalencia.com/wp-content/uploads/2019/10/que-son-las-extensiones-de-pelo-clip.jpg" alt="Extensiones Cejas">
+                <img src="https://down-co.img.susercontent.com/file/e5118dbc1c73739a82d7030811bad114" alt="Extensiones Cejas">
+                <img src="https://m.media-amazon.com/images/I/7106z5ri4dL._SL1100_.jpg" alt="Extensiones Cejas">
+                <img src="https://m.media-amazon.com/images/I/716u5-uAfSL._AC_UF1000,1000_QL80_.jpg" alt="Extensiones Cejas">
+                <img src="https://ae01.alicdn.com/kf/Sb56d108593f54153a421604bb25fa60dM/Dairess-extensiones-de-cabello-sint-tico-Afro-para-mujer-mechones-de-pelo-largo-y-ondulado-rizado.jpg" alt="Extensiones Cejas">
+                <img src="https://ae01.alicdn.com/kf/S5a5441c3449f4518b1a7d097ab669853a/Clip-de-pelo-humano-liso-para-mujer-extensiones-Afro-rizado-140G-extensi-n-Natural-Racily.jpg" alt="Extensiones Cejas">
+                <img src="https://m.media-amazon.com/images/I/81McLzkc5TL.jpg" alt="Extensiones Cejas">
+                <img src="https://m.media-amazon.com/images/I/61KOBgmDFIL._AC_UF350,350_QL80_.jpg" alt="Extensiones Cejas">
+                <img src="https://i.ebayimg.com/thumbs/images/g/rEYAAOSw4o5k4s6W/s-l1200.jpg" alt="Extensiones Cejas">
+                <img src="https://img.baba-blog.com/2024/03/Mona-Hair-Indian-Raw-Hair-Extensions-Unprocessed-Virgin-Quality.jpg?x-oss-process=style%2Ffull" alt="Extensiones Cejas">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_736658-MCO74134539305_012024-T.webp" alt="Extensiones Cejas">
+            </div>
+        </section>
+
+        <section id="productos">
+            <h2>Productos</h2>
+            <div class="image-gallery">
+                <img src="https://saloninprofessional.com/wp-content/uploads/2023/11/prod-Braziliss.png" alt="Productos">
+                <img src="https://e7.pngegg.com/pngimages/896/242/png-clipart-hair-care-beauty-parlour-argan-oil-hair-styling-products-oil-miscellaneous-oil.png" alt="Productos">
+                <img src="https://w7.pngwing.com/pngs/551/616/png-transparent-cosmetics-hair-care-hair-styling-products-beauty-parlour-hair-cosmetics-people-hair.png" alt="Productos">
+                <img src="https://e7.pngegg.com/pngimages/156/60/png-clipart-hair-care-beauty-parlour-hair-styling-products-wella-sebastian-people-cosmetics.png" alt="Productos">
+                <img src="https://www.consmarpeluqueras.com/wp-content/uploads/2020/12/2.jpg" alt="Productos">
+                <img src="https://e7.pngegg.com/pngimages/410/219/png-clipart-lotion-hair-styling-products-hair-care-beauty-parlour-hair-care-brands-service-hair.png" alt="Productos">
+                <img src="https://w7.pngwing.com/pngs/556/233/png-transparent-cosmetics-hair-care-beauty-parlour-hairstyle-hair-cosmetics-people-fashion.png" alt="Productos">
+                <img src="https://cdn.aarp.net/content/dam/aarp/entertainment/beauty-and-style/2020/04/1140-hair-products-on-table-esp.jpg" alt="Productos">
+                <img src="https://diprobell.com/wp-content/uploads/2023/06/Productos-de-belleza-DIPROBELL.png" alt="Productos">
+                <img src="https://diprobell.com/wp-content/uploads/2023/06/Productos-de-belleza-DIPROBELL.png" alt="Productos">
+                <img src="https://diprobell.com/wp-content/uploads/2023/06/Productos-de-belleza-DIPROBELL.png" alt="Productos">
+                <img src="https://diprobell.com/wp-content/uploads/2023/06/Productos-de-belleza-DIPROBELL.png" alt="Productos">
+            </div>
+        </section>
+
+        <section id="accesorios">
+            <h2>Accesorios</h2>
+            <div class="image-gallery">
+                <img src="https://img.freepik.com/fotos-premium/tijeras-otros-accesorios-peluqueria-sobre-fondo-rosa-espacio-plano-texto_432165-177.jpg" alt="Accesorios">
+                <img src="https://media.istockphoto.com/id/1024577404/es/foto/varias-herramientas-de-pelo-dresser-en-fondo-rosa-con-espacio-de-copia.jpg?s=612x612&w=0&k=20&c=rNYMw2E6xpO6i53a2HJkcBLZaFp_2V39Z4TmOhKTec4=" alt="Accesorios">
+                <img src="https://www.seomalaga.com/wp-content/uploads/2024/02/Elementos-Esenciales-Diseno-Web-para-Peluqueria-scaled.webp" alt="Accesorios">
+                <img src="https://previews.123rf.com/images/9dreamstudio/9dreamstudio2003/9dreamstudio200306586/143010536-concepto-de-sal%C3%B3n-de-belleza-patr%C3%B3n-de-accesorios-de-peluquer%C3%ADa-sobre-fondo-rosa-de-arriba-hacia.jpg" alt="Accesorios">
+            </div>
+        </section>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <div class="contact-info">
+            <p><strong>Email:</strong> contacto@divina.com</p>
+            <p><strong>Teléfono:</strong> 3153469803</p>
+            <p><strong>Dirección:</strong> Carr. 73 B., Buenaventura</p>
+        </div>
+        
+        <div class="circle-container">
+            <a href="https://web.facebook.com/?locale=es_LA&_rdc=1&_rdr" class="circle">
+                <img src="https://store-images.s-microsoft.com/image/apps.37935.9007199266245907.b029bd80-381a-4869-854f-bac6f359c5c9.91f8693c-c75b-4050-a796-63e1314d18c9" alt="Imagen 1"> <!-- Tamaño más pequeño -->
+            </a>
+            <a href="https://www.instagram.com/" class="circle">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/800px-Instagram_logo_2022.svg.png" alt="Imagen 2"> <!-- Tamaño más pequeño -->
+            </a>
+            <a href="https://www.tiktok.com/explore" class="circle">
+                <img src="https://roymo.es/wp-content/uploads/2022/04/jyhtrgbfvscd-edited.png.webp" alt="Imagen 3"> <!-- Tamaño más pequeño -->
+            </a>
+            <a href="https://web.whatsapp.com/" class="circle">
+                <img src="https://play-lh.googleusercontent.com/bYtqbOcTYOlgc6gqZ2rwb8lptHuwlNE75zYJu6Bn076-hTmvd96HH-6v7S0YUAAJXoJN" alt="Imagen 4"> <!-- Tamaño más pequeño -->
+            </a>
+        </div>
+    </section>
+
+    <script>
+        // Script simple para mostrar un mensaje al hacer clic en el botón "Comprar Extensiones"
+        document.getElementById('buyButton').addEventListener('click', function(event) {
+            event.preventDefault();
+            alert('Gracias por su interés en nuestras extensiones. Pronto estarán disponibles.');
+        });
+    </script>
+
+</body>
+</html>
